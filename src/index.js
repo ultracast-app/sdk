@@ -47,6 +47,7 @@ export default class UltraCasat {
         }
 
         this.socket = io('https://socket.ultracast.app', {
+            transports: ['websocket'],
             query: {
                 clientKey: this.clientKey,
                 tvUUID: this.tvUUID
